@@ -236,33 +236,9 @@ This project demonstrates expertise in:
 - ♿ **Accessibility & SEO** - Semantic HTML, ARIA, structured data
 - 🎯 **Enterprise Features** - Security, compliance, scalability considerations
 
-## 🌐 **Live Demo**
 
-**Project URL**: https://lovable.dev/projects/a38e3e27-92ab-4f2c-b9c1-7c098c1a11d9
 
-## 💻 **Development & Deployment**
 
-### **Local Development**
-This project was built using [Lovable](https://lovable.dev) - an AI-powered development platform. 
-
-For local development:
-1. Clone this repository
-2. Run `npm install` to install dependencies
-3. Run `npm run dev` to start the development server
-4. Visit `http://localhost:5173` to view the application
-
-### **Deployment**
-- **Easy Deploy**: Use Lovable's built-in deployment via Share → Publish
-- **Custom Domain**: Connect your domain via Project → Settings → Domains
-- **Alternative**: Deploy to Vercel, Netlify, or any static hosting platform
-
-## 📞 **Contact**
-
-**Developer**: [Your Name]
-- 🌐 **Portfolio**: [your-portfolio.com](https://your-portfolio.com)
-- 💼 **LinkedIn**: [your-linkedin](https://linkedin.com/in/your-profile)
-- 📧 **Email**: your.email@example.com
-- 🐙 **GitHub**: [@yourusername](https://github.com/yourusername)
 
 ---
 
