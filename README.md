@@ -244,4 +244,4 @@ This project demonstrates expertise in:
 
 ⭐ **If you found this project helpful, please give it a star!** ⭐
 
-*Built with ❤️ using React, TypeScript, and Tailwind CSS on the Lovable platform*
+*Built with ❤️ using React, TypeScript, and Tailwind CSS*
