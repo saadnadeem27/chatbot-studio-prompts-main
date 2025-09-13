@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Premium Dark Theme - AI Chatbot */
+    --background: 222 15% 6%;
+    --foreground: 220 10% 95%;
+
+    --card: 222 20% 8%;
+    --card-foreground: 220 10% 95%;
+
+    --popover: 222 20% 8%;
+    --popover-foreground: 220 10% 95%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 222 15% 6%;
+
+    --secondary: 222 20% 12%;
+    --secondary-foreground: 220 10% 95%;
+
+    --muted: 222 20% 10%;
+    --muted-foreground: 220 5% 65%;
+
+    --accent: 195 100% 50%;
+    --accent-foreground: 222 15% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 10% 95%;
+
+    --border: 222 20% 15%;
+    --input: 222 20% 12%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Premium Design Tokens */
+    --electric-blue: 195 100% 50%;
+    --electric-blue-dim: 195 80% 40%;
+    --silver: 220 10% 85%;
+    --glass-bg: 222 20% 8%;
+    --glass-border: 222 30% 20%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(195 100% 50% / 0.8), hsl(195 80% 40% / 0.6));
+    --gradient-glass: linear-gradient(135deg, hsl(222 20% 8% / 0.8), hsl(222 30% 12% / 0.6));
+    --gradient-hero: radial-gradient(ellipse at center, hsl(195 100% 50% / 0.1), transparent 70%);
+    
+    /* Shadows */
+    --shadow-premium: 0 20px 40px -12px hsl(195 100% 50% / 0.25);
+    --shadow-glass: 0 8px 32px hsl(222 15% 6% / 0.3);
+    --shadow-glow: 0 0 60px hsl(195 100% 50% / 0.3);
+
+    /* Animations */
+    --transition-premium: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode inherits from root */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image: var(--gradient-hero);
+  }
+}
+
+@layer utilities {
+  /* Glass morphism effects */
+  .glass {
+    background: hsl(var(--glass-bg) / 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border));
+  }
+  
+  .glass-card {
+    @apply glass rounded-2xl shadow-[var(--shadow-glass)];
+  }
+  
+  /* Premium gradients */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-glass {
+    background: var(--gradient-glass);
+  }
+  
+  /* Glow effects */
+  .glow-blue {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .glow-hover {
+    transition: var(--transition-premium);
+  }
+  
+  .glow-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-premium);
+  }
+  
+  /* Premium animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px hsl(195 100% 50% / 0.3);
+  }
+  50% { 
+    box-shadow: 0 0 40px hsl(195 100% 50% / 0.6);
+  }
+}
