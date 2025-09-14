@@ -10,7 +10,8 @@ A cutting-edge AI assistant landing page built with modern web technologies, fea
 ![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
 ## ✨ Features
-
+<!-- Portfolio preview image: place your screenshot at `public/chatbot-promts-portfolio.png` -->
+![Portfolio Preview](public/chatbot-promts-portfolio.png)
 ### 🎨 **Premium Design System**
 - **Glass Morphism UI** - Modern frosted glass effects with backdrop blur
 - **Dark Theme Architecture** - Sophisticated dark mode with electric blue accents
